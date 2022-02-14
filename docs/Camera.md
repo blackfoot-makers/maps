@@ -17,7 +17,7 @@
 | &nbsp;&nbsp;&nbsp;&nbsp;paddingBottom | `number` | `none` | `false` | Bottom padding in points |
 | &nbsp;&nbsp;heading | `number` | `none` | `false` | Heading on map |
 | &nbsp;&nbsp;pitch | `number` | `none` | `false` | Pitch on map |
-| &nbsp;&nbsp;bounds | `shape` | `none` | `false` | Represents a rectangle in geographical coordinates marking the visible area of the map.<br/>The `bounds.padding*` properties are deprecated; use root `padding` property instead. |
+| &nbsp;&nbsp;bounds | `shape` | `none` | `false` | Represents a rectangle in geographical coordinates marking the visible area of the map.<br/>The `bounds.padding*` properties are deprecated; use root `padding` property instead. |
 | &nbsp;&nbsp;&nbsp;&nbsp;ne | `array` | `none` | `true` | North east coordinate of bound |
 | &nbsp;&nbsp;&nbsp;&nbsp;sw | `array` | `none` | `true` | South west coordinate of bound |
 | &nbsp;&nbsp;&nbsp;&nbsp;paddingLeft | `number` | `none` | `false` | Left padding in points (deprecated; use root `padding` property instead) |
@@ -34,7 +34,7 @@
 | &nbsp;&nbsp;paddingBottom | `number` | `none` | `false` | Bottom padding in points |
 | heading | `number` | `none` | `false` | Heading on map |
 | pitch | `number` | `none` | `false` | Pitch on map |
-| bounds | `shape` | `none` | `false` | Represents a rectangle in geographical coordinates marking the visible area of the map.<br/>The `bounds.padding*` properties are deprecated; use root `padding` property instead. |
+| bounds | `shape` | `none` | `false` | Represents a rectangle in geographical coordinates marking the visible area of the map.<br/>The `bounds.padding*` properties are deprecated; use root `padding` property instead. |
 | &nbsp;&nbsp;ne | `array` | `none` | `true` | North east coordinate of bound |
 | &nbsp;&nbsp;sw | `array` | `none` | `true` | South west coordinate of bound |
 | &nbsp;&nbsp;paddingLeft | `number` | `none` | `false` | Left padding in points (deprecated; use root `padding` property instead) |
