@@ -1,5 +1,9 @@
 # Android Installation
 
+## Permissions
+
+If you need to localize the user, you must add the permission `android.permission.ACCESS_FINE_LOCATION"` to your `AndroidManifest.xml` file
+
 ## React-Native > `0.60.0`
 
 If you are using autolinking feature introduced in React-Native `0.60.0` you do not need any additional steps.

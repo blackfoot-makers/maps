@@ -6,8 +6,8 @@
 | Prop | Type | Default | Required | Description |
 | ---- | :--: | :-----: | :------: | :----------: |
 | animated | `bool` | `true` | `false` | Whether location icon is animated between updates |
-| renderMode | `enum` | `'normal'` | `false` | Which render mode to use.<br/>Can either be `normal` or `native` |
-| androidRenderMode | `enum` | `none` | `false` | native/android only render mode<br/><br/> - normal: just a circle<br/> - compass: triangle with heading<br/> - gps: large arrow<br/><br/>@platform android |
+| renderMode | `enum` | `'normal'` | `false` | Which render mode to use.<br/>Can either be `normal` or `native` |
+| androidRenderMode | `enum` | `none` | `false` | native/android only render mode<br/><br/> - normal: just a circle<br/> - compass: triangle with heading<br/> - gps: large arrow<br/><br/>@platform android |
 | visible | `bool` | `true` | `false` | Whether location icon is visible |
 | onPress | `func` | `none` | `false` | Callback that is triggered on location icon press |
 | onUpdate | `func` | `none` | `false` | Callback that is triggered on location update |
@@ -18,7 +18,7 @@
 ### methods
 #### setLocationManager({running})
 
-Whether to start or stop listening to the locationManager<br/><br/>Notice, that listening will start automatically when<br/>either `onUpdate` or `visible` are set
+Whether to start or stop listening to the locationManager<br/><br/>Notice, that listening will start automatically when<br/>either `onUpdate` or `visible` are set
 
 ##### arguments
 | Name | Type | Required | Description  |

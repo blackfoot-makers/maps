@@ -16,7 +16,7 @@
         "required": false,
         "type": "string",
         "default": "MapboxGL.StyleSource.DefaultSourceID",
-        "description": "The source from which to obtain the data to style.\nIf the source has not yet been added to the current style, the behavior is undefined.\nInferred from parent source only if the layer is a direct child to it."
+        "description": "The source from which to obtain the data to style.\r\nIf the source has not yet been added to the current style, the behavior is undefined.\r\nInferred from parent source only if the layer is a direct child to it."
       },
       {
         "name": "sourceLayerID",
@@ -214,7 +214,7 @@
     "methods": [
       {
         "name": "fitBounds",
-        "docblock": "Map camera transitions to fit provided bounds\n\n@example\nthis.camera.fitBounds([lng, lat], [lng, lat])\nthis.camera.fitBounds([lng, lat], [lng, lat], 20, 1000) // padding for all sides\nthis.camera.fitBounds([lng, lat], [lng, lat], [verticalPadding, horizontalPadding], 1000)\nthis.camera.fitBounds([lng, lat], [lng, lat], [top, right, bottom, left], 1000)\n\n@param {Array<Number>} northEastCoordinates - North east coordinate of bound\n@param {Array<Number>} southWestCoordinates - South west coordinate of bound\n@param {Number=} padding - Camera padding for bound\n@param {Number=} animationDuration - Duration of camera animation\n@return {void}",
+        "docblock": "Map camera transitions to fit provided bounds\r\n\r\n@example\r\nthis.camera.fitBounds([lng, lat], [lng, lat])\r\nthis.camera.fitBounds([lng, lat], [lng, lat], 20, 1000) // padding for all sides\r\nthis.camera.fitBounds([lng, lat], [lng, lat], [verticalPadding, horizontalPadding], 1000)\r\nthis.camera.fitBounds([lng, lat], [lng, lat], [top, right, bottom, left], 1000)\r\n\r\n@param {Array<Number>} northEastCoordinates - North east coordinate of bound\r\n@param {Array<Number>} southWestCoordinates - South west coordinate of bound\r\n@param {Number=} padding - Camera padding for bound\r\n@param {Number=} animationDuration - Duration of camera animation\r\n@return {void}",
         "modifiers": [],
         "params": [
           {
@@ -268,12 +268,12 @@
         },
         "description": "Map camera transitions to fit provided bounds",
         "examples": [
-          "\nthis.camera.fitBounds([lng, lat], [lng, lat])\nthis.camera.fitBounds([lng, lat], [lng, lat], 20, 1000) // padding for all sides\nthis.camera.fitBounds([lng, lat], [lng, lat], [verticalPadding, horizontalPadding], 1000)\nthis.camera.fitBounds([lng, lat], [lng, lat], [top, right, bottom, left], 1000)\n\n"
+          "\r\nthis.camera.fitBounds([lng, lat], [lng, lat])\r\nthis.camera.fitBounds([lng, lat], [lng, lat], 20, 1000) // padding for all sides\r\nthis.camera.fitBounds([lng, lat], [lng, lat], [verticalPadding, horizontalPadding], 1000)\r\nthis.camera.fitBounds([lng, lat], [lng, lat], [top, right, bottom, left], 1000)\r\n\r\n"
         ]
       },
       {
         "name": "flyTo",
-        "docblock": "Map camera will fly to new coordinate\n\n@example\nthis.camera.flyTo([lng, lat])\nthis.camera.flyTo([lng, lat], 12000)\n\n @param {Array<Number>} coordinates - Coordinates that map camera will jump too\n @param {Number=} animationDuration - Duration of camera animation\n @return {void}",
+        "docblock": "Map camera will fly to new coordinate\r\n\r\n@example\r\nthis.camera.flyTo([lng, lat])\r\nthis.camera.flyTo([lng, lat], 12000)\r\n\r\n @param {Array<Number>} coordinates - Coordinates that map camera will jump too\r\n @param {Number=} animationDuration - Duration of camera animation\r\n @return {void}",
         "modifiers": [],
         "params": [
           {
@@ -306,12 +306,12 @@
         },
         "description": "Map camera will fly to new coordinate",
         "examples": [
-          "\nthis.camera.flyTo([lng, lat])\nthis.camera.flyTo([lng, lat], 12000)\n\n "
+          "\r\nthis.camera.flyTo([lng, lat])\r\nthis.camera.flyTo([lng, lat], 12000)\r\n\r\n "
         ]
       },
       {
         "name": "moveTo",
-        "docblock": "Map camera will move to new coordinate at the same zoom level\n\n@example\nthis.camera.moveTo([lng, lat], 200) // eases camera to new location based on duration\nthis.camera.moveTo([lng, lat]) // snaps camera to new location without any easing\n\n @param {Array<Number>} coordinates - Coordinates that map camera will move too\n @param {Number=} animationDuration - Duration of camera animation\n @return {void}",
+        "docblock": "Map camera will move to new coordinate at the same zoom level\r\n\r\n@example\r\nthis.camera.moveTo([lng, lat], 200) // eases camera to new location based on duration\r\nthis.camera.moveTo([lng, lat]) // snaps camera to new location without any easing\r\n\r\n @param {Array<Number>} coordinates - Coordinates that map camera will move too\r\n @param {Number=} animationDuration - Duration of camera animation\r\n @return {void}",
         "modifiers": [],
         "params": [
           {
@@ -344,12 +344,12 @@
         },
         "description": "Map camera will move to new coordinate at the same zoom level",
         "examples": [
-          "\nthis.camera.moveTo([lng, lat], 200) // eases camera to new location based on duration\nthis.camera.moveTo([lng, lat]) // snaps camera to new location without any easing\n\n "
+          "\r\nthis.camera.moveTo([lng, lat], 200) // eases camera to new location based on duration\r\nthis.camera.moveTo([lng, lat]) // snaps camera to new location without any easing\r\n\r\n "
         ]
       },
       {
         "name": "zoomTo",
-        "docblock": "Map camera will zoom to specified level\n\n@example\nthis.camera.zoomTo(16)\nthis.camera.zoomTo(16, 100)\n\n@param {Number} zoomLevel - Zoom level that the map camera will animate too\n@param {Number=} animationDuration - Duration of camera animation\n@return {void}",
+        "docblock": "Map camera will zoom to specified level\r\n\r\n@example\r\nthis.camera.zoomTo(16)\r\nthis.camera.zoomTo(16, 100)\r\n\r\n@param {Number} zoomLevel - Zoom level that the map camera will animate too\r\n@param {Number=} animationDuration - Duration of camera animation\r\n@return {void}",
         "modifiers": [],
         "params": [
           {
@@ -377,12 +377,12 @@
         },
         "description": "Map camera will zoom to specified level",
         "examples": [
-          "\nthis.camera.zoomTo(16)\nthis.camera.zoomTo(16, 100)\n\n"
+          "\r\nthis.camera.zoomTo(16)\r\nthis.camera.zoomTo(16, 100)\r\n\r\n"
         ]
       },
       {
         "name": "setCamera",
-        "docblock": "Map camera will perform updates based on provided config. Advanced use only!\n\n@example\nthis.camera.setCamera({\n  centerCoordinate: [lng, lat],\n  zoomLevel: 16,\n  animationDuration: 2000,\n})\n\nthis.camera.setCamera({\n  stops: [\n    { pitch: 45, animationDuration: 200 },\n    { heading: 180, animationDuration: 300 },\n  ]\n})\n\n @param {Object} config - Camera configuration",
+        "docblock": "Map camera will perform updates based on provided config. Advanced use only!\r\n\r\n@example\r\nthis.camera.setCamera({\r\n  centerCoordinate: [lng, lat],\r\n  zoomLevel: 16,\r\n  animationDuration: 2000,\r\n})\r\n\r\nthis.camera.setCamera({\r\n  stops: [\r\n    { pitch: 45, animationDuration: 200 },\r\n    { heading: 180, animationDuration: 300 },\r\n  ]\r\n})\r\n\r\n @param {Object} config - Camera configuration",
         "modifiers": [],
         "params": [
           {
@@ -397,7 +397,7 @@
         "returns": null,
         "description": "Map camera will perform updates based on provided config. Advanced use only!",
         "examples": [
-          "\nthis.camera.setCamera({\n  centerCoordinate: [lng, lat],\n  zoomLevel: 16,\n  animationDuration: 2000,\n})\n\nthis.camera.setCamera({\n  stops: [\n    { pitch: 45, animationDuration: 200 },\n    { heading: 180, animationDuration: 300 },\n  ]\n})\n\n "
+          "\r\nthis.camera.setCamera({\r\n  centerCoordinate: [lng, lat],\r\n  zoomLevel: 16,\r\n  animationDuration: 2000,\r\n})\r\n\r\nthis.camera.setCamera({\r\n  stops: [\r\n    { pitch: 45, animationDuration: 200 },\r\n    { heading: 180, animationDuration: 300 },\r\n  ]\r\n})\r\n\r\n "
         ]
       }
     ],
@@ -555,7 +555,7 @@
                 ]
               },
               "default": "none",
-              "description": "Represents a rectangle in geographical coordinates marking the visible area of the map.\nThe `bounds.padding*` properties are deprecated; use root `padding` property instead."
+              "description": "Represents a rectangle in geographical coordinates marking the visible area of the map.\r\nThe `bounds.padding*` properties are deprecated; use root `padding` property instead."
             },
             {
               "name": "onUserTrackingModeChange",
@@ -702,7 +702,7 @@
           ]
         },
         "default": "none",
-        "description": "Represents a rectangle in geographical coordinates marking the visible area of the map.\nThe `bounds.padding*` properties are deprecated; use root `padding` property instead."
+        "description": "Represents a rectangle in geographical coordinates marking the visible area of the map.\r\nThe `bounds.padding*` properties are deprecated; use root `padding` property instead."
       },
       {
         "name": "onUserTrackingModeChange",
@@ -832,14 +832,14 @@
         "required": false,
         "type": "string",
         "default": "MapboxGL.StyleSource.DefaultSourceID",
-        "description": "The source from which to obtain the data to style.\nIf the source has not yet been added to the current style, the behavior is undefined.\nInferred from parent source only if the layer is a direct child to it."
+        "description": "The source from which to obtain the data to style.\r\nIf the source has not yet been added to the current style, the behavior is undefined.\r\nInferred from parent source only if the layer is a direct child to it."
       },
       {
         "name": "sourceLayerID",
         "required": false,
         "type": "string",
         "default": "none",
-        "description": "Identifier of the layer within the source identified by the sourceID property\nfrom which the receiver obtains the data to style."
+        "description": "Identifier of the layer within the source identified by the sourceID property\r\nfrom which the receiver obtains the data to style."
       },
       {
         "name": "aboveLayerID",
@@ -1173,7 +1173,7 @@
         "required": false,
         "type": "string",
         "default": "MapboxGL.StyleSource.DefaultSourceID",
-        "description": "The source from which to obtain the data to style.\nIf the source has not yet been added to the current style, the behavior is undefined.\nInferred from parent source only if the layer is a direct child to it."
+        "description": "The source from which to obtain the data to style.\r\nIf the source has not yet been added to the current style, the behavior is undefined.\r\nInferred from parent source only if the layer is a direct child to it."
       },
       {
         "name": "sourceLayerID",
@@ -1424,7 +1424,7 @@
         "required": false,
         "type": "string",
         "default": "MapboxGL.StyleSource.DefaultSourceID",
-        "description": "The source from which to obtain the data to style.\nIf the source has not yet been added to the current style, the behavior is undefined.\nInferred from parent source only if the layer is a direct child to it."
+        "description": "The source from which to obtain the data to style.\r\nIf the source has not yet been added to the current style, the behavior is undefined.\r\nInferred from parent source only if the layer is a direct child to it."
       },
       {
         "name": "sourceLayerID",
@@ -1684,14 +1684,14 @@
         "required": false,
         "type": "string",
         "default": "MapboxGL.StyleSource.DefaultSourceID",
-        "description": "The source from which to obtain the data to style.\nIf the source has not yet been added to the current style, the behavior is undefined.\nInferred from parent source only if the layer is a direct child to it."
+        "description": "The source from which to obtain the data to style.\r\nIf the source has not yet been added to the current style, the behavior is undefined.\r\nInferred from parent source only if the layer is a direct child to it."
       },
       {
         "name": "sourceLayerID",
         "required": false,
         "type": "string",
         "default": "none",
-        "description": "Identifier of the layer within the source identified by the sourceID property\nfrom which the receiver obtains the data to style."
+        "description": "Identifier of the layer within the source identified by the sourceID property\r\nfrom which the receiver obtains the data to style."
       },
       {
         "name": "aboveLayerID",
@@ -1885,7 +1885,7 @@
     ]
   },
   "ImageSource": {
-    "description": "ImageSource is a content source that is used for a georeferenced raster image to be shown on the map.\nThe georeferenced image scales and rotates as the user zooms and rotates the map",
+    "description": "ImageSource is a content source that is used for a georeferenced raster image to be shown on the map.\r\nThe georeferenced image scales and rotates as the user zooms and rotates the map",
     "displayName": "ImageSource",
     "methods": [],
     "props": [
@@ -1901,7 +1901,7 @@
         "required": false,
         "type": "union",
         "default": "none",
-        "description": "An HTTP(S) URL, absolute file URL, or local file URL to the source image.\nGifs are currently not supported."
+        "description": "An HTTP(S) URL, absolute file URL, or local file URL to the source image.\r\nGifs are currently not supported."
       },
       {
         "name": "coordinates",
@@ -1936,7 +1936,7 @@
         "required": false,
         "type": "object",
         "default": "none",
-        "description": "Specifies the external images in key-value pairs required for the shape source.\nKeys are names - see iconImage expressions, values can be either urls-s objects\nwith format {uri: 'http://...'}` or `require('image.png')` or `import 'image.png'`"
+        "description": "Specifies the external images in key-value pairs required for the shape source.\r\nKeys are names - see iconImage expressions, values can be either urls-s objects\r\nwith format {uri: 'http://...'}` or `require('image.png')` or `import 'image.png'`"
       },
       {
         "name": "nativeAssetImages",
@@ -1948,14 +1948,14 @@
           }
         },
         "default": "none",
-        "description": "If you have an asset under Image.xcassets on iOS and the drawables directory on android\nyou can specify an array of string names with assets as the key `['pin']`."
+        "description": "If you have an asset under Image.xcassets on iOS and the drawables directory on android\r\nyou can specify an array of string names with assets as the key `['pin']`."
       },
       {
         "name": "onImageMissing",
         "required": false,
         "type": "func",
         "default": "none",
-        "description": "Gets called when a Layer is trying to render an image whose key is not present in\nany of the `Images` component of the Map."
+        "description": "Gets called when a Layer is trying to render an image whose key is not present in\r\nany of the `Images` component of the Map."
       }
     ],
     "composes": [
@@ -2083,7 +2083,7 @@
         "required": false,
         "type": "string",
         "default": "MapboxGL.StyleSource.DefaultSourceID",
-        "description": "The source from which to obtain the data to style.\nIf the source has not yet been added to the current style, the behavior is undefined.\nInferred from parent source only if the layer is a direct child to it."
+        "description": "The source from which to obtain the data to style.\r\nIf the source has not yet been added to the current style, the behavior is undefined.\r\nInferred from parent source only if the layer is a direct child to it."
       },
       {
         "name": "sourceLayerID",
@@ -2498,7 +2498,7 @@
     "methods": [
       {
         "name": "getPointInView",
-        "docblock": "Converts a geographic coordinate to a point in the given view’s coordinate system.\n\n@example\nconst pointInView = await this._map.getPointInView([-37.817070, 144.949901]);\n\n@param {Array<Number>} coordinate - A point expressed in the map view's coordinate system.\n@return {Array}",
+        "docblock": "Converts a geographic coordinate to a point in the given view’s coordinate system.\r\n\r\n@example\r\nconst pointInView = await this._map.getPointInView([-37.817070, 144.949901]);\r\n\r\n@param {Array<Number>} coordinate - A point expressed in the map view's coordinate system.\r\n@return {Array}",
         "modifiers": [
           "async"
         ],
@@ -2525,12 +2525,12 @@
         },
         "description": "Converts a geographic coordinate to a point in the given view’s coordinate system.",
         "examples": [
-          "\nconst pointInView = await this._map.getPointInView([-37.817070, 144.949901]);\n\n"
+          "\r\nconst pointInView = await this._map.getPointInView([-37.817070, 144.949901]);\r\n\r\n"
         ]
       },
       {
         "name": "getCoordinateFromView",
-        "docblock": "Converts a point in the given view’s coordinate system to a geographic coordinate.\n\n@example\nconst coordinate = await this._map.getCoordinateFromView([100, 100]);\n\n@param {Array<Number>} point - A point expressed in the given view’s coordinate system.\n@return {Array}",
+        "docblock": "Converts a point in the given view’s coordinate system to a geographic coordinate.\r\n\r\n@example\r\nconst coordinate = await this._map.getCoordinateFromView([100, 100]);\r\n\r\n@param {Array<Number>} point - A point expressed in the given view’s coordinate system.\r\n@return {Array}",
         "modifiers": [
           "async"
         ],
@@ -2557,12 +2557,12 @@
         },
         "description": "Converts a point in the given view’s coordinate system to a geographic coordinate.",
         "examples": [
-          "\nconst coordinate = await this._map.getCoordinateFromView([100, 100]);\n\n"
+          "\r\nconst coordinate = await this._map.getCoordinateFromView([100, 100]);\r\n\r\n"
         ]
       },
       {
         "name": "getVisibleBounds",
-        "docblock": "The coordinate bounds(ne, sw) visible in the users’s viewport.\n\n@example\nconst visibleBounds = await this._map.getVisibleBounds();\n\n@return {Array}",
+        "docblock": "The coordinate bounds(ne, sw) visible in the users’s viewport.\r\n\r\n@example\r\nconst visibleBounds = await this._map.getVisibleBounds();\r\n\r\n@return {Array}",
         "modifiers": [
           "async"
         ],
@@ -2575,12 +2575,12 @@
         },
         "description": "The coordinate bounds(ne, sw) visible in the users’s viewport.",
         "examples": [
-          "\nconst visibleBounds = await this._map.getVisibleBounds();\n\n"
+          "\r\nconst visibleBounds = await this._map.getVisibleBounds();\r\n\r\n"
         ]
       },
       {
         "name": "queryRenderedFeaturesAtPoint",
-        "docblock": "Returns an array of rendered map features that intersect with a given point.\n\n@example\nthis._map.queryRenderedFeaturesAtPoint([30, 40], ['==', 'type', 'Point'], ['id1', 'id2'])\n\n@param  {Array<Number>} coordinate - A point expressed in the map view’s coordinate system.\n@param  {Array=} filter - A set of strings that correspond to the names of layers defined in the current style. Only the features contained in these layers are included in the returned array.\n@param  {Array=} layerIDs - A array of layer id's to filter the features by\n@return {FeatureCollection}",
+        "docblock": "Returns an array of rendered map features that intersect with a given point.\r\n\r\n@example\r\nthis._map.queryRenderedFeaturesAtPoint([30, 40], ['==', 'type', 'Point'], ['id1', 'id2'])\r\n\r\n@param  {Array<Number>} coordinate - A point expressed in the map view’s coordinate system.\r\n@param  {Array=} filter - A set of strings that correspond to the names of layers defined in the current style. Only the features contained in these layers are included in the returned array.\r\n@param  {Array=} layerIDs - A array of layer id's to filter the features by\r\n@return {FeatureCollection}",
         "modifiers": [
           "async"
         ],
@@ -2623,12 +2623,12 @@
         },
         "description": "Returns an array of rendered map features that intersect with a given point.",
         "examples": [
-          "\nthis._map.queryRenderedFeaturesAtPoint([30, 40], ['==', 'type', 'Point'], ['id1', 'id2'])\n\n"
+          "\r\nthis._map.queryRenderedFeaturesAtPoint([30, 40], ['==', 'type', 'Point'], ['id1', 'id2'])\r\n\r\n"
         ]
       },
       {
         "name": "queryRenderedFeaturesInRect",
-        "docblock": "Returns an array of rendered map features that intersect with the given rectangle,\nrestricted to the given style layers and filtered by the given predicate.\n\n@example\nthis._map.queryRenderedFeaturesInRect([30, 40, 20, 10], ['==', 'type', 'Point'], ['id1', 'id2'])\n\n@param  {Array<Number>} bbox - A rectangle expressed in the map view’s coordinate system.\n@param  {Array=} filter - A set of strings that correspond to the names of layers defined in the current style. Only the features contained in these layers are included in the returned array.\n@param  {Array=} layerIDs -  A array of layer id's to filter the features by\n@return {FeatureCollection}",
+        "docblock": "Returns an array of rendered map features that intersect with the given rectangle,\r\nrestricted to the given style layers and filtered by the given predicate.\r\n\r\n@example\r\nthis._map.queryRenderedFeaturesInRect([30, 40, 20, 10], ['==', 'type', 'Point'], ['id1', 'id2'])\r\n\r\n@param  {Array<Number>} bbox - A rectangle expressed in the map view’s coordinate system.\r\n@param  {Array=} filter - A set of strings that correspond to the names of layers defined in the current style. Only the features contained in these layers are included in the returned array.\r\n@param  {Array=} layerIDs -  A array of layer id's to filter the features by\r\n@return {FeatureCollection}",
         "modifiers": [
           "async"
         ],
@@ -2669,9 +2669,9 @@
             "name": "FeatureCollection"
           }
         },
-        "description": "Returns an array of rendered map features that intersect with the given rectangle,\nrestricted to the given style layers and filtered by the given predicate.",
+        "description": "Returns an array of rendered map features that intersect with the given rectangle,\r\nrestricted to the given style layers and filtered by the given predicate.",
         "examples": [
-          "\nthis._map.queryRenderedFeaturesInRect([30, 40, 20, 10], ['==', 'type', 'Point'], ['id1', 'id2'])\n\n"
+          "\r\nthis._map.queryRenderedFeaturesInRect([30, 40, 20, 10], ['==', 'type', 'Point'], ['id1', 'id2'])\r\n\r\n"
         ]
       },
       {
@@ -2685,7 +2685,7 @@
       },
       {
         "name": "takeSnap",
-        "docblock": "Takes snapshot of map with current tiles and returns a URI to the image\n@param  {Boolean} writeToDisk If true will create a temp file, otherwise it is in base64\n@return {String}",
+        "docblock": "Takes snapshot of map with current tiles and returns a URI to the image\r\n@param  {Boolean} writeToDisk If true will create a temp file, otherwise it is in base64\r\n@return {String}",
         "modifiers": [
           "async"
         ],
@@ -2710,7 +2710,7 @@
       },
       {
         "name": "getZoom",
-        "docblock": "Returns the current zoom of the map view.\n\n@example\nconst zoom = await this._map.getZoom();\n\n@return {Number}",
+        "docblock": "Returns the current zoom of the map view.\r\n\r\n@example\r\nconst zoom = await this._map.getZoom();\r\n\r\n@return {Number}",
         "modifiers": [
           "async"
         ],
@@ -2723,12 +2723,12 @@
         },
         "description": "Returns the current zoom of the map view.",
         "examples": [
-          "\nconst zoom = await this._map.getZoom();\n\n"
+          "\r\nconst zoom = await this._map.getZoom();\r\n\r\n"
         ]
       },
       {
         "name": "getCenter",
-        "docblock": "Returns the map's geographical centerpoint\n\n@example\nconst center = await this._map.getCenter();\n\n@return {Array<Number>} Coordinates",
+        "docblock": "Returns the map's geographical centerpoint\r\n\r\n@example\r\nconst center = await this._map.getCenter();\r\n\r\n@return {Array<Number>} Coordinates",
         "modifiers": [
           "async"
         ],
@@ -2746,12 +2746,12 @@
         },
         "description": "Returns the map's geographical centerpoint",
         "examples": [
-          "\nconst center = await this._map.getCenter();\n\n"
+          "\r\nconst center = await this._map.getCenter();\r\n\r\n"
         ]
       },
       {
         "name": "setSourceVisibility",
-        "docblock": "Sets the visibility of all the layers referencing the specified `sourceLayerId` and/or `sourceId`\n\n@example\nawait this._map.setSourceVisibility(false, 'composite', 'building')\n\n@param {boolean} visible - Visibility of the layers\n@param {String} sourceId - Identifier of the target source (e.g. 'composite')\n@param {String=} sourceLayerId - Identifier of the target source-layer (e.g. 'building')",
+        "docblock": "Sets the visibility of all the layers referencing the specified `sourceLayerId` and/or `sourceId`\r\n\r\n@example\r\nawait this._map.setSourceVisibility(false, 'composite', 'building')\r\n\r\n@param {boolean} visible - Visibility of the layers\r\n@param {String} sourceId - Identifier of the target source (e.g. 'composite')\r\n@param {String=} sourceLayerId - Identifier of the target source-layer (e.g. 'building')",
         "modifiers": [],
         "params": [
           {
@@ -2782,16 +2782,16 @@
         "returns": null,
         "description": "Sets the visibility of all the layers referencing the specified `sourceLayerId` and/or `sourceId`",
         "examples": [
-          "\nawait this._map.setSourceVisibility(false, 'composite', 'building')\n\n"
+          "\r\nawait this._map.setSourceVisibility(false, 'composite', 'building')\r\n\r\n"
         ]
       },
       {
         "name": "showAttribution",
-        "docblock": "Show the attribution and telemetry action sheet.\nIf you implement a custom attribution button, you should add this action to the button.",
+        "docblock": "Show the attribution and telemetry action sheet.\r\nIf you implement a custom attribution button, you should add this action to the button.",
         "modifiers": [],
         "params": [],
         "returns": null,
-        "description": "Show the attribution and telemetry action sheet.\nIf you implement a custom attribution button, you should add this action to the button.",
+        "description": "Show the attribution and telemetry action sheet.\r\nIf you implement a custom attribution button, you should add this action to the button.",
         "examples": []
       }
     ],
@@ -2829,14 +2829,14 @@
         "required": false,
         "type": "number",
         "default": "none",
-        "description": "iOS: The preferred frame rate at which the map view is rendered.\nThe default value for this property is MGLMapViewPreferredFramesPerSecondDefault,\nwhich will adaptively set the preferred frame rate based on the capability of\nthe user’s device to maintain a smooth experience. This property can be set to arbitrary integer values.\n\nAndroid: The maximum frame rate at which the map view is rendered, but it can't excess the ability of device hardware.\nThis property can be set to arbitrary integer values."
+        "description": "iOS: The preferred frame rate at which the map view is rendered.\r\nThe default value for this property is MGLMapViewPreferredFramesPerSecondDefault,\r\nwhich will adaptively set the preferred frame rate based on the capability of\r\nthe user’s device to maintain a smooth experience. This property can be set to arbitrary integer values.\r\n\r\nAndroid: The maximum frame rate at which the map view is rendered, but it can't excess the ability of device hardware.\r\nThis property can be set to arbitrary integer values."
       },
       {
         "name": "localizeLabels",
         "required": false,
         "type": "bool",
         "default": "false",
-        "description": "Automatically change the language of the map labels to the system’s preferred language,\nthis is not something that can be toggled on/off"
+        "description": "Automatically change the language of the map labels to the system’s preferred language,\r\nthis is not something that can be toggled on/off"
       },
       {
         "name": "zoomEnabled",
@@ -2871,7 +2871,7 @@
         "required": false,
         "type": "bool",
         "default": "true",
-        "description": "The Mapbox terms of service, which governs the use of Mapbox-hosted vector tiles and styles,\n[requires](https://www.mapbox.com/help/how-attribution-works/) these copyright notices to accompany any map that features Mapbox-designed styles, OpenStreetMap data, or other Mapbox data such as satellite or terrain data.\nIf that applies to this map view, do not hide this view or remove any notices from it.\n\nYou are additionally [required](https://www.mapbox.com/help/how-mobile-apps-work/#telemetry) to provide users with the option to disable anonymous usage and location sharing (telemetry).\nIf this view is hidden, you must implement this setting elsewhere in your app. See our website for [Android](https://www.mapbox.com/android-docs/map-sdk/overview/#telemetry-opt-out) and [iOS](https://www.mapbox.com/ios-sdk/#telemetry_opt_out) for implementation details.\n\nEnable/Disable attribution on map. For iOS you need to add MGLMapboxMetricsEnabledSettingShownInApp=YES\nto your Info.plist"
+        "description": "The Mapbox terms of service, which governs the use of Mapbox-hosted vector tiles and styles,\r\n[requires](https://www.mapbox.com/help/how-attribution-works/) these copyright notices to accompany any map that features Mapbox-designed styles, OpenStreetMap data, or other Mapbox data such as satellite or terrain data.\r\nIf that applies to this map view, do not hide this view or remove any notices from it.\r\n\r\nYou are additionally [required](https://www.mapbox.com/help/how-mobile-apps-work/#telemetry) to provide users with the option to disable anonymous usage and location sharing (telemetry).\r\nIf this view is hidden, you must implement this setting elsewhere in your app. See our website for [Android](https://www.mapbox.com/android-docs/map-sdk/overview/#telemetry-opt-out) and [iOS](https://www.mapbox.com/ios-sdk/#telemetry_opt_out) for implementation details.\r\n\r\nEnable/Disable attribution on map. For iOS you need to add MGLMapboxMetricsEnabledSettingShownInApp=YES\r\nto your Info.plist"
       },
       {
         "name": "attributionPosition",
@@ -3092,7 +3092,7 @@
     "name": "MapView"
   },
   "MarkerView": {
-    "description": "MarkerView allows you to place a interactive react native marker to the map.\n\nIf you have static view consider using PointAnnotation or SymbolLayer they'll offer much better performance\n.\nThis is based on [MakerView plugin](https://docs.mapbox.com/android/plugins/overview/markerview/) on Android\nand PointAnnotation on iOS.",
+    "description": "MarkerView allows you to place a interactive react native marker to the map.\r\n\r\nIf you have static view consider using PointAnnotation or SymbolLayer they'll offer much better performance\r\n.\r\nThis is based on [MakerView plugin](https://docs.mapbox.com/android/plugins/overview/markerview/) on Android\r\nand PointAnnotation on iOS.",
     "displayName": "MarkerView",
     "methods": [],
     "props": [
@@ -3106,7 +3106,7 @@
           }
         },
         "default": "none",
-        "description": "The center point (specified as a map coordinate) of the marker.\nSee also #anchor."
+        "description": "The center point (specified as a map coordinate) of the marker.\r\nSee also #anchor."
       },
       {
         "name": "anchor",
@@ -3131,7 +3131,7 @@
           ]
         },
         "default": "{x: 0.5, y: 0.5}",
-        "description": "Specifies the anchor being set on a particular point of the annotation.\nThe anchor point is specified in the continuous space [0.0, 1.0] x [0.0, 1.0],\nwhere (0, 0) is the top-left corner of the image, and (1, 1) is the bottom-right corner.\nNote this is only for custom annotations not the default pin view.\nDefaults to the center of the view."
+        "description": "Specifies the anchor being set on a particular point of the annotation.\r\nThe anchor point is specified in the continuous space [0.0, 1.0] x [0.0, 1.0],\r\nwhere (0, 0) is the top-left corner of the image, and (1, 1) is the bottom-right corner.\r\nNote this is only for custom annotations not the default pin view.\r\nDefaults to the center of the view."
       },
       {
         "name": "children",
@@ -3156,29 +3156,29 @@
         "required": false,
         "type": "enum",
         "default": "none",
-        "description": "Android render mode.\n\n - normal: just a circle\n - compass: triangle with heading\n - gps: large arrow\n\n@platform android"
+        "description": "Android render mode.\r\n\r\n - normal: just a circle\r\n - compass: triangle with heading\r\n - gps: large arrow\r\n\r\n@platform android"
       },
       {
         "name": "iosShowsUserHeadingIndicator",
         "required": false,
         "type": "bool",
         "default": "none",
-        "description": "iOS only. A Boolean value indicating whether the user location annotation may display a permanent heading indicator.\n\n@platform ios"
+        "description": "iOS only. A Boolean value indicating whether the user location annotation may display a permanent heading indicator.\r\n\r\n@platform ios"
       }
     ],
     "name": "NativeUserLocation"
   },
   "PointAnnotation": {
-    "description": "PointAnnotation represents a one-dimensional shape located at a single geographical coordinate.\n\nConsider using ShapeSource and SymbolLayer instead, if you have many points and you have static images,\nthey'll offer much better performance\n\n.\nIf you need interctive views please use MarkerView,\nas with PointAnnotation on Android child views are rendered onto a bitmap for better performance.",
+    "description": "PointAnnotation represents a one-dimensional shape located at a single geographical coordinate.\r\n\r\nConsider using ShapeSource and SymbolLayer instead, if you have many points and you have static images,\r\nthey'll offer much better performance\r\n\r\n.\r\nIf you need interctive views please use MarkerView,\r\nas with PointAnnotation on Android child views are rendered onto a bitmap for better performance.",
     "displayName": "PointAnnotation",
     "methods": [
       {
         "name": "refresh",
-        "docblock": "On android point annotation is rendered offscreen with a canvas into an image.\nTo rerender the image from the current state of the view call refresh.\nCall this for example from Image#onLoad.",
+        "docblock": "On android point annotation is rendered offscreen with a canvas into an image.\r\nTo rerender the image from the current state of the view call refresh.\r\nCall this for example from Image#onLoad.",
         "modifiers": [],
         "params": [],
         "returns": null,
-        "description": "On android point annotation is rendered offscreen with a canvas into an image.\nTo rerender the image from the current state of the view call refresh.\nCall this for example from Image#onLoad.",
+        "description": "On android point annotation is rendered offscreen with a canvas into an image.\r\nTo rerender the image from the current state of the view call refresh.\r\nCall this for example from Image#onLoad.",
         "examples": []
       }
     ],
@@ -3209,7 +3209,7 @@
         "required": false,
         "type": "bool",
         "default": "none",
-        "description": "Manually selects/deselects annotation\n@type {[type]}"
+        "description": "Manually selects/deselects annotation\r\n@type {[type]}"
       },
       {
         "name": "draggable",
@@ -3253,7 +3253,7 @@
           ]
         },
         "default": "{x: 0.5, y: 0.5}",
-        "description": "Specifies the anchor being set on a particular point of the annotation.\nThe anchor point is specified in the continuous space [0.0, 1.0] x [0.0, 1.0],\nwhere (0, 0) is the top-left corner of the image, and (1, 1) is the bottom-right corner.\nNote this is only for custom annotations not the default pin view.\nDefaults to the center of the view."
+        "description": "Specifies the anchor being set on a particular point of the annotation.\r\nThe anchor point is specified in the continuous space [0.0, 1.0] x [0.0, 1.0],\r\nwhere (0, 0) is the top-left corner of the image, and (1, 1) is the bottom-right corner.\r\nNote this is only for custom annotations not the default pin view.\r\nDefaults to the center of the view."
       },
       {
         "name": "onSelected",
@@ -3313,7 +3313,7 @@
         "required": false,
         "type": "string",
         "default": "MapboxGL.StyleSource.DefaultSourceID",
-        "description": "The source from which to obtain the data to style.\nIf the source has not yet been added to the current style, the behavior is undefined.\nInferred from parent source only if the layer is a direct child to it."
+        "description": "The source from which to obtain the data to style.\r\nIf the source has not yet been added to the current style, the behavior is undefined.\r\nInferred from parent source only if the layer is a direct child to it."
       },
       {
         "name": "sourceLayerID",
@@ -3556,7 +3556,7 @@
     ]
   },
   "RasterSource": {
-    "description": "RasterSource is a map content source that supplies raster image tiles to be shown on the map.\nThe location of and metadata about the tiles are defined either by an option dictionary\nor by an external file that conforms to the TileJSON specification.",
+    "description": "RasterSource is a map content source that supplies raster image tiles to be shown on the map.\r\nThe location of and metadata about the tiles are defined either by an option dictionary\r\nor by an external file that conforms to the TileJSON specification.",
     "displayName": "RasterSource",
     "methods": [],
     "props": [
@@ -3584,28 +3584,28 @@
           }
         },
         "default": "none",
-        "description": "An array of tile URL templates. If multiple endpoints are specified, clients may use any combination of endpoints.\nExample: https://example.com/raster-tiles/{z}/{x}/{y}.png"
+        "description": "An array of tile URL templates. If multiple endpoints are specified, clients may use any combination of endpoints.\r\nExample: https://example.com/raster-tiles/{z}/{x}/{y}.png"
       },
       {
         "name": "minZoomLevel",
         "required": false,
         "type": "number",
         "default": "none",
-        "description": "An unsigned integer that specifies the minimum zoom level at which to display tiles from the source.\nThe value should be between 0 and 22, inclusive, and less than\nmaxZoomLevel, if specified. The default value for this option is 0."
+        "description": "An unsigned integer that specifies the minimum zoom level at which to display tiles from the source.\r\nThe value should be between 0 and 22, inclusive, and less than\r\nmaxZoomLevel, if specified. The default value for this option is 0."
       },
       {
         "name": "maxZoomLevel",
         "required": false,
         "type": "number",
         "default": "none",
-        "description": "An unsigned integer that specifies the maximum zoom level at which to display tiles from the source.\nThe value should be between 0 and 22, inclusive, and less than\nminZoomLevel, if specified. The default value for this option is 22."
+        "description": "An unsigned integer that specifies the maximum zoom level at which to display tiles from the source.\r\nThe value should be between 0 and 22, inclusive, and less than\r\nminZoomLevel, if specified. The default value for this option is 22."
       },
       {
         "name": "tileSize",
         "required": false,
         "type": "number",
         "default": "none",
-        "description": "Size of the map tiles.\nMapbox urls default to 256, all others default to 512."
+        "description": "Size of the map tiles.\r\nMapbox urls default to 256, all others default to 512."
       },
       {
         "name": "tms",
@@ -3619,7 +3619,7 @@
         "required": false,
         "type": "string",
         "default": "none",
-        "description": "An HTML or literal text string defining the buttons to be displayed in an action sheet when the\nsource is part of a map view’s style and the map view’s attribution button is pressed."
+        "description": "An HTML or literal text string defining the buttons to be displayed in an action sheet when the\r\nsource is part of a map view’s style and the map view’s attribution button is pressed."
       }
     ],
     "composes": [
@@ -3628,12 +3628,12 @@
     "name": "RasterSource"
   },
   "ShapeSource": {
-    "description": "ShapeSource is a map content source that supplies vector shapes to be shown on the map.\nThe shape may be a url or a GeoJSON object",
+    "description": "ShapeSource is a map content source that supplies vector shapes to be shown on the map.\r\nThe shape may be a url or a GeoJSON object",
     "displayName": "ShapeSource",
     "methods": [
       {
         "name": "features",
-        "docblock": "Returns all features from the source that match the query parameters regardless of whether or not the feature is\ncurrently rendered on the map.\n\n@example\nshapeSource.features()\n\n@param  {Array=} filter - an optional filter statement to filter the returned Features.\n@return {FeatureCollection}",
+        "docblock": "Returns all features from the source that match the query parameters regardless of whether or not the feature is\r\ncurrently rendered on the map.\r\n\r\n@example\r\nshapeSource.features()\r\n\r\n@param  {Array=} filter - an optional filter statement to filter the returned Features.\r\n@return {FeatureCollection}",
         "modifiers": [
           "async"
         ],
@@ -3653,14 +3653,14 @@
             "name": "FeatureCollection"
           }
         },
-        "description": "Returns all features from the source that match the query parameters regardless of whether or not the feature is\ncurrently rendered on the map.",
+        "description": "Returns all features from the source that match the query parameters regardless of whether or not the feature is\r\ncurrently rendered on the map.",
         "examples": [
-          "\nshapeSource.features()\n\n"
+          "\r\nshapeSource.features()\r\n\r\n"
         ]
       },
       {
         "name": "getClusterExpansionZoom",
-        "docblock": "Returns the zoom needed to expand the cluster.\n\n@example\nconst zoom = await shapeSource.getClusterExpansionZoom(clusterId);\n\n@param  {Feature} feature - The feature cluster to expand.\n@return {number}",
+        "docblock": "Returns the zoom needed to expand the cluster.\r\n\r\n@example\r\nconst zoom = await shapeSource.getClusterExpansionZoom(clusterId);\r\n\r\n@param  {Feature} feature - The feature cluster to expand.\r\n@return {number}",
         "modifiers": [
           "async"
         ],
@@ -3682,12 +3682,12 @@
         },
         "description": "Returns the zoom needed to expand the cluster.",
         "examples": [
-          "\nconst zoom = await shapeSource.getClusterExpansionZoom(clusterId);\n\n"
+          "\r\nconst zoom = await shapeSource.getClusterExpansionZoom(clusterId);\r\n\r\n"
         ]
       },
       {
         "name": "getClusterLeaves",
-        "docblock": "Returns the FeatureCollection from the cluster.\n\n@example\nconst collection = await shapeSource.getClusterLeaves(clusterId, limit, offset);\n\n@param  {Feature} feature - The feature cluster to expand.\n@param  {number} limit - The number of points to return.\n@param  {number} offset - The amount of points to skip (for pagination).\n@return {FeatureCollection}",
+        "docblock": "Returns the FeatureCollection from the cluster.\r\n\r\n@example\r\nconst collection = await shapeSource.getClusterLeaves(clusterId, limit, offset);\r\n\r\n@param  {Feature} feature - The feature cluster to expand.\r\n@param  {number} limit - The number of points to return.\r\n@param  {number} offset - The amount of points to skip (for pagination).\r\n@return {FeatureCollection}",
         "modifiers": [
           "async"
         ],
@@ -3725,12 +3725,12 @@
         },
         "description": "Returns the FeatureCollection from the cluster.",
         "examples": [
-          "\nconst collection = await shapeSource.getClusterLeaves(clusterId, limit, offset);\n\n"
+          "\r\nconst collection = await shapeSource.getClusterLeaves(clusterId, limit, offset);\r\n\r\n"
         ]
       },
       {
         "name": "getClusterChildren",
-        "docblock": "Returns the FeatureCollection from the cluster (on the next zoom level).\n\n@example\nconst collection = await shapeSource.getClusterChildren(clusterId);\n\n@param  {Feature} feature - The feature cluster to expand.\n@return {FeatureCollection}",
+        "docblock": "Returns the FeatureCollection from the cluster (on the next zoom level).\r\n\r\n@example\r\nconst collection = await shapeSource.getClusterChildren(clusterId);\r\n\r\n@param  {Feature} feature - The feature cluster to expand.\r\n@return {FeatureCollection}",
         "modifiers": [
           "async"
         ],
@@ -3752,7 +3752,7 @@
         },
         "description": "Returns the FeatureCollection from the cluster (on the next zoom level).",
         "examples": [
-          "\nconst collection = await shapeSource.getClusterChildren(clusterId);\n\n"
+          "\r\nconst collection = await shapeSource.getClusterChildren(clusterId);\r\n\r\n"
         ]
       },
       {
@@ -3802,49 +3802,49 @@
         "required": false,
         "type": "number",
         "default": "none",
-        "description": "Specifies the radius of each cluster if clustering is enabled.\nA value of 512 produces a radius equal to the width of a tile.\nThe default value is 50."
+        "description": "Specifies the radius of each cluster if clustering is enabled.\r\nA value of 512 produces a radius equal to the width of a tile.\r\nThe default value is 50."
       },
       {
         "name": "clusterMaxZoomLevel",
         "required": false,
         "type": "number",
         "default": "none",
-        "description": "Specifies the maximum zoom level at which to cluster points if clustering is enabled.\nDefaults to one zoom level less than the value of maxZoomLevel so that, at the maximum zoom level,\nthe shapes are not clustered."
+        "description": "Specifies the maximum zoom level at which to cluster points if clustering is enabled.\r\nDefaults to one zoom level less than the value of maxZoomLevel so that, at the maximum zoom level,\r\nthe shapes are not clustered."
       },
       {
         "name": "maxZoomLevel",
         "required": false,
         "type": "number",
         "default": "none",
-        "description": "Specifies the maximum zoom level at which to create vector tiles.\nA greater value produces greater detail at high zoom levels.\nThe default value is 18."
+        "description": "Specifies the maximum zoom level at which to create vector tiles.\r\nA greater value produces greater detail at high zoom levels.\r\nThe default value is 18."
       },
       {
         "name": "buffer",
         "required": false,
         "type": "number",
         "default": "none",
-        "description": "Specifies the size of the tile buffer on each side.\nA value of 0 produces no buffer. A value of 512 produces a buffer as wide as the tile itself.\nLarger values produce fewer rendering artifacts near tile edges and slower performance.\nThe default value is 128."
+        "description": "Specifies the size of the tile buffer on each side.\r\nA value of 0 produces no buffer. A value of 512 produces a buffer as wide as the tile itself.\r\nLarger values produce fewer rendering artifacts near tile edges and slower performance.\r\nThe default value is 128."
       },
       {
         "name": "tolerance",
         "required": false,
         "type": "number",
         "default": "none",
-        "description": "Specifies the Douglas-Peucker simplification tolerance.\nA greater value produces simpler geometries and improves performance.\nThe default value is 0.375."
+        "description": "Specifies the Douglas-Peucker simplification tolerance.\r\nA greater value produces simpler geometries and improves performance.\r\nThe default value is 0.375."
       },
       {
         "name": "lineMetrics",
         "required": false,
         "type": "bool",
         "default": "none",
-        "description": "Whether to calculate line distance metrics.\nThis is required for line layers that specify lineGradient values.\nThe default value is false."
+        "description": "Whether to calculate line distance metrics.\r\nThis is required for line layers that specify lineGradient values.\r\nThe default value is false."
       },
       {
         "name": "onPress",
         "required": false,
         "type": "func",
         "default": "none",
-        "description": "Source press listener, gets called when a user presses one of the children layers only\nif that layer has a higher z-index than another source layers",
+        "description": "Source press listener, gets called when a user presses one of the children layers only\r\nif that layer has a higher z-index than another source layers",
         "params": [
           {
             "name": "event",
@@ -3921,7 +3921,7 @@
     "name": "ShapeSource"
   },
   "Style": {
-    "description": "Style is a component that automatically adds sources / layers to the map using Mapbox GL Style Spec.\nOnly [`sources`](https://docs.mapbox.com/mapbox-gl-js/style-spec/sources) & [`layers`](https://docs.mapbox.com/mapbox-gl-js/style-spec/layers/) are supported.\nOther fields such as `sprites`, `glyphs` etc. will be ignored. Not all layer / source attributes from the style spec are supported, in general the supported attributes will mentioned under https://github.com/react-native-mapbox-gl/maps/tree/master/docs.",
+    "description": "Style is a component that automatically adds sources / layers to the map using Mapbox GL Style Spec.\r\nOnly [`sources`](https://docs.mapbox.com/mapbox-gl-js/style-spec/sources) & [`layers`](https://docs.mapbox.com/mapbox-gl-js/style-spec/layers/) are supported.\r\nOther fields such as `sprites`, `glyphs` etc. will be ignored. Not all layer / source attributes from the style spec are supported, in general the supported attributes will mentioned under https://github.com/react-native-mapbox-gl/maps/tree/master/docs.",
     "displayName": "Style",
     "methods": [],
     "props": [
@@ -3952,7 +3952,7 @@
         "required": false,
         "type": "string",
         "default": "MapboxGL.StyleSource.DefaultSourceID",
-        "description": "The source from which to obtain the data to style.\nIf the source has not yet been added to the current style, the behavior is undefined.\nInferred from parent source only if the layer is a direct child to it."
+        "description": "The source from which to obtain the data to style.\r\nIf the source has not yet been added to the current style, the behavior is undefined.\r\nInferred from parent source only if the layer is a direct child to it."
       },
       {
         "name": "sourceLayerID",
@@ -5355,7 +5355,7 @@
     "methods": [
       {
         "name": "setLocationManager",
-        "docblock": "Whether to start or stop listening to the locationManager\n\nNotice, that listening will start automatically when\neither `onUpdate` or `visible` are set\n\n@async\n@param {Object} running - Object with key `running` and `boolean` value\n@return {Promise<void>}",
+        "docblock": "Whether to start or stop listening to the locationManager\r\n\r\nNotice, that listening will start automatically when\r\neither `onUpdate` or `visible` are set\r\n\r\n@async\r\n@param {Object} running - Object with key `running` and `boolean` value\r\n@return {Promise<void>}",
         "modifiers": [
           "async"
         ],
@@ -5375,12 +5375,12 @@
             ]
           }
         },
-        "description": "Whether to start or stop listening to the locationManager\n\nNotice, that listening will start automatically when\neither `onUpdate` or `visible` are set",
+        "description": "Whether to start or stop listening to the locationManager\r\n\r\nNotice, that listening will start automatically when\r\neither `onUpdate` or `visible` are set",
         "examples": []
       },
       {
         "name": "needsLocationManagerRunning",
-        "docblock": "If locationManager should be running\n\n@return {boolean}",
+        "docblock": "If locationManager should be running\r\n\r\n@return {boolean}",
         "modifiers": [],
         "params": [],
         "returns": {
@@ -5406,14 +5406,14 @@
         "required": false,
         "type": "enum",
         "default": "'normal'",
-        "description": "Which render mode to use.\nCan either be `normal` or `native`"
+        "description": "Which render mode to use.\r\nCan either be `normal` or `native`"
       },
       {
         "name": "androidRenderMode",
         "required": false,
         "type": "enum",
         "default": "none",
-        "description": "native/android only render mode\n\n - normal: just a circle\n - compass: triangle with heading\n - gps: large arrow\n\n@platform android"
+        "description": "native/android only render mode\r\n\r\n - normal: just a circle\r\n - compass: triangle with heading\r\n - gps: large arrow\r\n\r\n@platform android"
       },
       {
         "name": "visible",
@@ -5461,12 +5461,12 @@
     "name": "UserLocation"
   },
   "VectorSource": {
-    "description": "VectorSource is a map content source that supplies tiled vector data in Mapbox Vector Tile format to be shown on the map.\nThe location of and metadata about the tiles are defined either by an option dictionary or by an external file that conforms to the TileJSON specification.",
+    "description": "VectorSource is a map content source that supplies tiled vector data in Mapbox Vector Tile format to be shown on the map.\r\nThe location of and metadata about the tiles are defined either by an option dictionary or by an external file that conforms to the TileJSON specification.",
     "displayName": "VectorSource",
     "methods": [
       {
         "name": "features",
-        "docblock": "Returns all features that match the query parameters regardless of whether or not the feature is\ncurrently rendered on the map. The domain of the query includes all currently-loaded vector tiles\nand GeoJSON source tiles. This function does not check tiles outside of the visible viewport.\n\n@example\nvectorSource.features(['id1', 'id2'])\n\n@param  {Array=} layerIDs - A set of strings that correspond to the names of layers defined in the current style. Only the features contained in these layers are included in the returned array.\n@param  {Array=} filter - an optional filter statement to filter the returned Features.\n@return {FeatureCollection}",
+        "docblock": "Returns all features that match the query parameters regardless of whether or not the feature is\r\ncurrently rendered on the map. The domain of the query includes all currently-loaded vector tiles\r\nand GeoJSON source tiles. This function does not check tiles outside of the visible viewport.\r\n\r\n@example\r\nvectorSource.features(['id1', 'id2'])\r\n\r\n@param  {Array=} layerIDs - A set of strings that correspond to the names of layers defined in the current style. Only the features contained in these layers are included in the returned array.\r\n@param  {Array=} filter - an optional filter statement to filter the returned Features.\r\n@return {FeatureCollection}",
         "modifiers": [
           "async"
         ],
@@ -5494,9 +5494,9 @@
             "name": "FeatureCollection"
           }
         },
-        "description": "Returns all features that match the query parameters regardless of whether or not the feature is\ncurrently rendered on the map. The domain of the query includes all currently-loaded vector tiles\nand GeoJSON source tiles. This function does not check tiles outside of the visible viewport.",
+        "description": "Returns all features that match the query parameters regardless of whether or not the feature is\r\ncurrently rendered on the map. The domain of the query includes all currently-loaded vector tiles\r\nand GeoJSON source tiles. This function does not check tiles outside of the visible viewport.",
         "examples": [
-          "\nvectorSource.features(['id1', 'id2'])\n\n"
+          "\r\nvectorSource.features(['id1', 'id2'])\r\n\r\n"
         ]
       },
       {
@@ -5537,21 +5537,21 @@
           }
         },
         "default": "none",
-        "description": "An array of tile URL templates. If multiple endpoints are specified, clients may use any combination of endpoints.\nExample: https://example.com/vector-tiles/{z}/{x}/{y}.pbf"
+        "description": "An array of tile URL templates. If multiple endpoints are specified, clients may use any combination of endpoints.\r\nExample: https://example.com/vector-tiles/{z}/{x}/{y}.pbf"
       },
       {
         "name": "minZoomLevel",
         "required": false,
         "type": "number",
         "default": "none",
-        "description": "An unsigned integer that specifies the minimum zoom level at which to display tiles from the source.\nThe value should be between 0 and 22, inclusive, and less than\nmaxZoomLevel, if specified. The default value for this option is 0."
+        "description": "An unsigned integer that specifies the minimum zoom level at which to display tiles from the source.\r\nThe value should be between 0 and 22, inclusive, and less than\r\nmaxZoomLevel, if specified. The default value for this option is 0."
       },
       {
         "name": "maxZoomLevel",
         "required": false,
         "type": "number",
         "default": "none",
-        "description": "An unsigned integer that specifies the maximum zoom level at which to display tiles from the source.\nThe value should be between 0 and 22, inclusive, and less than\nminZoomLevel, if specified. The default value for this option is 22."
+        "description": "An unsigned integer that specifies the maximum zoom level at which to display tiles from the source.\r\nThe value should be between 0 and 22, inclusive, and less than\r\nminZoomLevel, if specified. The default value for this option is 22."
       },
       {
         "name": "tms",
@@ -5565,14 +5565,14 @@
         "required": false,
         "type": "string",
         "default": "none",
-        "description": "An HTML or literal text string defining the buttons to be displayed in an action sheet when the\nsource is part of a map view’s style and the map view’s attribution button is pressed."
+        "description": "An HTML or literal text string defining the buttons to be displayed in an action sheet when the\r\nsource is part of a map view’s style and the map view’s attribution button is pressed."
       },
       {
         "name": "onPress",
         "required": false,
         "type": "func",
         "default": "none",
-        "description": "Source press listener, gets called when a user presses one of the children layers only\nif that layer has a higher z-index than another source layers",
+        "description": "Source press listener, gets called when a user presses one of the children layers only\r\nif that layer has a higher z-index than another source layers",
         "params": [
           {
             "name": "event",
@@ -5739,7 +5739,7 @@
   },
   "offlineManager": {
     "name": "offlineManager",
-    "description": "OfflineManager implements a singleton (shared object) that manages offline packs.\nAll of this class’s instance methods are asynchronous, reflecting the fact that offline resources are stored in a database.\nThe shared object maintains a canonical collection of offline packs.",
+    "description": "OfflineManager implements a singleton (shared object) that manages offline packs.\r\nAll of this class’s instance methods are asynchronous, reflecting the fact that offline resources are stored in a database.\r\nThe shared object maintains a canonical collection of offline packs.",
     "props": [],
     "styles": [],
     "methods": [
@@ -5773,7 +5773,7 @@
           }
         ],
         "examples": [
-          "const progressListener = (offlineRegion, status) => console.log(offlineRegion, status);\nconst errorListener = (offlineRegion, err) => console.log(offlineRegion, err);\n\nawait MapboxGL.offlineManager.createPack({\n  name: 'offlinePack',\n  styleURL: 'mapbox://...',\n  minZoom: 14,\n  maxZoom: 20,\n  bounds: [[neLng, neLat], [swLng, swLat]]\n}, progressListener, errorListener)"
+          "const progressListener = (offlineRegion, status) => console.log(offlineRegion, status);\r\nconst errorListener = (offlineRegion, err) => console.log(offlineRegion, err);\r\n\r\nawait MapboxGL.offlineManager.createPack({\r\n  name: 'offlinePack',\r\n  styleURL: 'mapbox://...',\r\n  minZoom: 14,\r\n  maxZoom: 20,\r\n  bounds: [[neLng, neLat], [swLng, swLat]]\r\n}, progressListener, errorListener)"
         ],
         "returns": {
           "description": "",
@@ -5830,7 +5830,7 @@
       },
       {
         "name": "invalidateAmbientCache",
-        "description": "Forces a revalidation of the tiles in the ambient cache and downloads a fresh version of the tiles from the tile server.\nThis is the recommend method for clearing the cache.\nThis is the most efficient method because tiles in the ambient cache are re-downloaded to remove outdated data from a device.\nIt does not erase resources from the ambient cache or delete the database, which can be computationally expensive operations that may carry unintended side effects.",
+        "description": "Forces a revalidation of the tiles in the ambient cache and downloads a fresh version of the tiles from the tile server.\r\nThis is the recommend method for clearing the cache.\r\nThis is the most efficient method because tiles in the ambient cache are re-downloaded to remove outdated data from a device.\r\nIt does not erase resources from the ambient cache or delete the database, which can be computationally expensive operations that may carry unintended side effects.",
         "params": [],
         "examples": [
           "await MapboxGL.offlineManager.invalidateAmbientCache();"
@@ -5844,7 +5844,7 @@
       },
       {
         "name": "clearAmbientCache",
-        "description": "Erases resources from the ambient cache.\nThis method clears the cache and decreases the amount of space that map resources take up on the device.",
+        "description": "Erases resources from the ambient cache.\r\nThis method clears the cache and decreases the amount of space that map resources take up on the device.",
         "params": [],
         "examples": [
           "await MapboxGL.offlineManager.clearAmbientCache();"
@@ -5858,7 +5858,7 @@
       },
       {
         "name": "setMaximumAmbientCacheSize",
-        "description": "Sets the maximum size of the ambient cache in bytes. Disables the ambient cache if set to 0.\nThis method may be computationally expensive because it will erase resources from the ambient cache if its size is decreased.",
+        "description": "Sets the maximum size of the ambient cache in bytes. Disables the ambient cache if set to 0.\r\nThis method may be computationally expensive because it will erase resources from the ambient cache if its size is decreased.",
         "params": [
           {
             "name": "size",
@@ -5955,7 +5955,7 @@
       },
       {
         "name": "setTileCountLimit",
-        "description": "Sets the maximum number of Mapbox-hosted tiles that may be downloaded and stored on the current device.\nThe Mapbox Terms of Service prohibit changing or bypassing this limit without permission from Mapbox.",
+        "description": "Sets the maximum number of Mapbox-hosted tiles that may be downloaded and stored on the current device.\r\nThe Mapbox Terms of Service prohibit changing or bypassing this limit without permission from Mapbox.",
         "params": [
           {
             "name": "limit",
@@ -5978,7 +5978,7 @@
       },
       {
         "name": "setProgressEventThrottle",
-        "description": "Sets the period at which download status events will be sent over the React Native bridge.\nThe default is 500ms.",
+        "description": "Sets the period at which download status events will be sent over the React Native bridge.\r\nThe default is 500ms.",
         "params": [
           {
             "name": "throttleValue",
@@ -6001,7 +6001,7 @@
       },
       {
         "name": "subscribe",
-        "description": "Subscribe to download status/error events for the requested offline pack.\nNote that createPack calls this internally if listeners are provided.",
+        "description": "Subscribe to download status/error events for the requested offline pack.\r\nNote that createPack calls this internally if listeners are provided.",
         "params": [
           {
             "name": "packName",
@@ -6029,7 +6029,7 @@
           }
         ],
         "examples": [
-          "const progressListener = (offlinePack, status) => console.log(offlinePack, status)\nconst errorListener = (offlinePack, err) => console.log(offlinePack, err)\nMapboxGL.offlineManager.subscribe('packName', progressListener, errorListener)"
+          "const progressListener = (offlinePack, status) => console.log(offlinePack, status)\r\nconst errorListener = (offlinePack, err) => console.log(offlinePack, err)\r\nMapboxGL.offlineManager.subscribe('packName', progressListener, errorListener)"
         ],
         "returns": {
           "description": "",
@@ -6040,7 +6040,7 @@
       },
       {
         "name": "unsubscribe",
-        "description": "Unsubscribes any listeners associated with the offline pack.\nIt's a good idea to call this on componentWillUnmount.",
+        "description": "Unsubscribes any listeners associated with the offline pack.\r\nIt's a good idea to call this on componentWillUnmount.",
         "params": [
           {
             "name": "packName",
@@ -6065,7 +6065,7 @@
   },
   "snapshotManager": {
     "name": "snapshotManager",
-    "description": "The snapshotManager generates static raster images of the map.\nEach snapshot image depicts a portion of a map defined by an SnapshotOptions object you provide.\nThe snapshotter generates the snapshot asynchronous.",
+    "description": "The snapshotManager generates static raster images of the map.\r\nEach snapshot image depicts a portion of a map defined by an SnapshotOptions object you provide.\r\nThe snapshotter generates the snapshot asynchronous.",
     "props": [],
     "styles": [],
     "methods": [
@@ -6083,7 +6083,7 @@
           }
         ],
         "examples": [
-          "// creates a temp file png of base map\nconst uri = await MapboxGL.snapshotManager.takeSnap({\n  centerCoordinate: [-74.126410, 40.797968],\n  width: width,\n  height: height,\n  zoomLevel: 12,\n  pitch: 30,\n  heading: 20,\n  styleURL: MapboxGL.StyleURL.Dark,\n  writeToDisk: true, // Create a temporary file\n});\n\n// creates base64 png of base map without logo\nconst uri = await MapboxGL.snapshotManager.takeSnap({\n  centerCoordinate: [-74.126410, 40.797968],\n  width: width,\n  height: height,\n  zoomLevel: 12,\n  pitch: 30,\n  heading: 20,\n  styleURL: MapboxGL.StyleURL.Dark,\n  withLogo: false, // Disable Mapbox logo (Android only)\n});\n\n// creates snapshot with bounds\nconst uri = await MapboxGL.snapshotManager.takeSnap({\n  bounds: [[-74.126410, 40.797968], [-74.143727, 40.772177]],\n  width: width,\n  height: height,\n  styleURL: MapboxGL.StyleURL.Dark,\n});"
+          "// creates a temp file png of base map\r\nconst uri = await MapboxGL.snapshotManager.takeSnap({\r\n  centerCoordinate: [-74.126410, 40.797968],\r\n  width: width,\r\n  height: height,\r\n  zoomLevel: 12,\r\n  pitch: 30,\r\n  heading: 20,\r\n  styleURL: MapboxGL.StyleURL.Dark,\r\n  writeToDisk: true, // Create a temporary file\r\n});\r\n\r\n// creates base64 png of base map without logo\r\nconst uri = await MapboxGL.snapshotManager.takeSnap({\r\n  centerCoordinate: [-74.126410, 40.797968],\r\n  width: width,\r\n  height: height,\r\n  zoomLevel: 12,\r\n  pitch: 30,\r\n  heading: 20,\r\n  styleURL: MapboxGL.StyleURL.Dark,\r\n  withLogo: false, // Disable Mapbox logo (Android only)\r\n});\r\n\r\n// creates snapshot with bounds\r\nconst uri = await MapboxGL.snapshotManager.takeSnap({\r\n  bounds: [[-74.126410, 40.797968], [-74.143727, 40.772177]],\r\n  width: width,\r\n  height: height,\r\n  styleURL: MapboxGL.StyleURL.Dark,\r\n});"
         ],
         "returns": {
           "description": "",

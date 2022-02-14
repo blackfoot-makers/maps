@@ -9,13 +9,13 @@
 | style | `any` | `none` | `false` | Style for wrapping React Native View |
 | styleURL | `string` | `none` | `false` | Style URL for map - notice, if non is set it _will_ default to `MapboxGL.StyleURL.Street` |
 | styleJSON | `string` | `none` | `false` | StyleJSON for map - according to TileJSON specs: https://github.com/mapbox/tilejson-spec |
-| preferredFramesPerSecond | `number` | `none` | `false` | iOS: The preferred frame rate at which the map view is rendered.<br/>The default value for this property is MGLMapViewPreferredFramesPerSecondDefault,<br/>which will adaptively set the preferred frame rate based on the capability of<br/>the user’s device to maintain a smooth experience. This property can be set to arbitrary integer values.<br/><br/>Android: The maximum frame rate at which the map view is rendered, but it can't excess the ability of device hardware.<br/>This property can be set to arbitrary integer values. |
-| localizeLabels | `bool` | `false` | `false` | Automatically change the language of the map labels to the system’s preferred language,<br/>this is not something that can be toggled on/off |
+| preferredFramesPerSecond | `number` | `none` | `false` | iOS: The preferred frame rate at which the map view is rendered.<br/>The default value for this property is MGLMapViewPreferredFramesPerSecondDefault,<br/>which will adaptively set the preferred frame rate based on the capability of<br/>the user’s device to maintain a smooth experience. This property can be set to arbitrary integer values.<br/><br/>Android: The maximum frame rate at which the map view is rendered, but it can't excess the ability of device hardware.<br/>This property can be set to arbitrary integer values. |
+| localizeLabels | `bool` | `false` | `false` | Automatically change the language of the map labels to the system’s preferred language,<br/>this is not something that can be toggled on/off |
 | zoomEnabled | `bool` | `none` | `false` | Enable/Disable zoom on the map |
 | scrollEnabled | `bool` | `true` | `false` | Enable/Disable scroll on the map |
 | pitchEnabled | `bool` | `true` | `false` | Enable/Disable pitch on map |
 | rotateEnabled | `bool` | `true` | `false` | Enable/Disable rotation on map |
-| attributionEnabled | `bool` | `true` | `false` | The Mapbox terms of service, which governs the use of Mapbox-hosted vector tiles and styles,<br/>[requires](https://www.mapbox.com/help/how-attribution-works/) these copyright notices to accompany any map that features Mapbox-designed styles, OpenStreetMap data, or other Mapbox data such as satellite or terrain data.<br/>If that applies to this map view, do not hide this view or remove any notices from it.<br/><br/>You are additionally [required](https://www.mapbox.com/help/how-mobile-apps-work/#telemetry) to provide users with the option to disable anonymous usage and location sharing (telemetry).<br/>If this view is hidden, you must implement this setting elsewhere in your app. See our website for [Android](https://www.mapbox.com/android-docs/map-sdk/overview/#telemetry-opt-out) and [iOS](https://www.mapbox.com/ios-sdk/#telemetry_opt_out) for implementation details.<br/><br/>Enable/Disable attribution on map. For iOS you need to add MGLMapboxMetricsEnabledSettingShownInApp=YES<br/>to your Info.plist |
+| attributionEnabled | `bool` | `true` | `false` | The Mapbox terms of service, which governs the use of Mapbox-hosted vector tiles and styles,<br/>[requires](https://www.mapbox.com/help/how-attribution-works/) these copyright notices to accompany any map that features Mapbox-designed styles, OpenStreetMap data, or other Mapbox data such as satellite or terrain data.<br/>If that applies to this map view, do not hide this view or remove any notices from it.<br/><br/>You are additionally [required](https://www.mapbox.com/help/how-mobile-apps-work/#telemetry) to provide users with the option to disable anonymous usage and location sharing (telemetry).<br/>If this view is hidden, you must implement this setting elsewhere in your app. See our website for [Android](https://www.mapbox.com/android-docs/map-sdk/overview/#telemetry-opt-out) and [iOS](https://www.mapbox.com/ios-sdk/#telemetry_opt_out) for implementation details.<br/><br/>Enable/Disable attribution on map. For iOS you need to add MGLMapboxMetricsEnabledSettingShownInApp=YES<br/>to your Info.plist |
 | attributionPosition | `union` | `none` | `false` | Adds attribution offset, e.g. `{top: 8, left: 8}` will put attribution button in top-left corner of the map |
 | tintColor | `union` | `none` | `false` | MapView's tintColor |
 | logoEnabled | `bool` | `true` | `false` | Enable/Disable the logo on the map. |
@@ -112,7 +112,7 @@ this._map.queryRenderedFeaturesAtPoint([30, 40], ['==', 'type', 'Point'], ['id1'
 
 #### queryRenderedFeaturesInRect(bbox[, filter][, layerIDs])
 
-Returns an array of rendered map features that intersect with the given rectangle,<br/>restricted to the given style layers and filtered by the given predicate.
+Returns an array of rendered map features that intersect with the given rectangle,<br/>restricted to the given style layers and filtered by the given predicate.
 
 ##### arguments
 | Name | Type | Required | Description  |
@@ -200,7 +200,7 @@ await this._map.setSourceVisibility(false, 'composite', 'building')
 
 #### showAttribution()
 
-Show the attribution and telemetry action sheet.<br/>If you implement a custom attribution button, you should add this action to the button.
+Show the attribution and telemetry action sheet.<br/>If you implement a custom attribution button, you should add this action to the button.
 
 ##### arguments
 | Name | Type | Required | Description  |
